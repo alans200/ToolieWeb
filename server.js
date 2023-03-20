@@ -15,6 +15,10 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
   res.sendFile(__dirname + '/contact.html')
 })
+
+app.get('/donations', (req, res) => {
+  res.sendFile(__dirname + '/donations.html')
+})
   
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
