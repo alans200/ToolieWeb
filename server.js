@@ -19,6 +19,14 @@ app.get('/contact', (req, res) => {
 app.get('/donations', (req, res) => {
   res.sendFile(__dirname + '/donations.html')
 })
+
+app.get('/catalog', (req, res) => {
+  res.sendFile(__dirname + '/catalog.html')
+})
+
+app.get('/privacypolicy', (req, res) => {
+  res.sendFile(__dirname + '/privacypolicy.html')
+})
   
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
